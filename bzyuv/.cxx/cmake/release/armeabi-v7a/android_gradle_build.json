@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "C:\\Users\\admin\\Desktop\\New Tokbox\\opentok-android-sdk-samples\\Basic-Video-Capturer-Camera-2-Java\\bzyuv\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "F:\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\admin\\Desktop\\New Tokbox\\opentok-android-sdk-samples\\Basic-Video-Capturer-Camera-2-Java\\bzyuv\\.cxx\\cmake\\release\\armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "F:\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\admin\\Desktop\\New Tokbox\\opentok-android-sdk-samples\\Basic-Video-Capturer-Camera-2-Java\\bzyuv\\.cxx\\cmake\\release\\armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "bzyuvlib-Release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "F:\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "C:\\Users\\admin\\Desktop\\New Tokbox\\opentok-android-sdk-samples\\Basic-Video-Capturer-Camera-2-Java\\bzyuv\\.cxx\\cmake\\release\\armeabi-v7a",
+        "bzyuvlib"
+      ],
+      "buildType": "release",
+      "abi": "armeabi-v7a",
+      "artifactName": "bzyuvlib",
+      "output": "C:\\Users\\admin\\Desktop\\New Tokbox\\opentok-android-sdk-samples\\Basic-Video-Capturer-Camera-2-Java\\bzyuv\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libbzyuvlib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

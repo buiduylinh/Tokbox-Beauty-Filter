@@ -1,0 +1,10 @@
+# ninja log v5
+65	278	658137478	CMakeFiles/bzyuvlib.dir/BZLogUtil.cpp.o	491e0f61d1e6febb
+0	308	658137478	CMakeFiles/bzyuvlib.dir/bz_time.cpp.o	d546484b339ec6c
+59	1266	658137479	CMakeFiles/bzyuvlib.dir/native-lib.cpp.o	303ea4b804884db7
+1268	2480	658137480	C:/Users/admin/Desktop/New Tokbox/opentok-android-sdk-samples/Basic-Video-Capturer-Camera-2-Java/bzyuv/build/intermediates/cmake/debug/obj/arm64-v8a/libbzyuvlib.so	44bf1787ae489bb4
+0	20	0	clean	b3a56ab144816720
+28	288	658147779	CMakeFiles/bzyuvlib.dir/BZLogUtil.cpp.o	491e0f61d1e6febb
+4	350	658147779	CMakeFiles/bzyuvlib.dir/bz_time.cpp.o	d546484b339ec6c
+22	1123	658147780	CMakeFiles/bzyuvlib.dir/native-lib.cpp.o	303ea4b804884db7
+1123	1505	658147780	C:/Users/admin/Desktop/New Tokbox/opentok-android-sdk-samples/Basic-Video-Capturer-Camera-2-Java/bzyuv/build/intermediates/cmake/debug/obj/arm64-v8a/libbzyuvlib.so	44bf1787ae489bb4

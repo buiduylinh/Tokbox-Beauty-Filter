@@ -1,0 +1,1 @@
+C:\Users\admin\Desktop\New Tokbox\opentok-android-sdk-samples\Basic-Video-Capturer-Camera-2-Java\bzyuv\build\intermediates\cmake\debug\obj\arm64-v8a

@@ -1,0 +1,23 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 16 min SDK version: armeabi-v7a",
+    "file": "C:\\Users\\admin\\Desktop\\New Tokbox\\opentok-android-sdk-samples\\Basic-Video-Capturer-Camera-2-Java\\bzyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON \u0027C:\\Users\\admin\\Desktop\\New Tokbox\\opentok-android-sdk-samples\\Basic-Video-Capturer-Camera-2-Java\\bzyuv\\.cxx\\cmake\\release\\armeabi-v7a\\android_gradle_build.json\u0027 was up-to-date",
+    "file": "C:\\Users\\admin\\Desktop\\New Tokbox\\opentok-android-sdk-samples\\Basic-Video-Capturer-Camera-2-Java\\bzyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed without problems",
+    "file": "C:\\Users\\admin\\Desktop\\New Tokbox\\opentok-android-sdk-samples\\Basic-Video-Capturer-Camera-2-Java\\bzyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
+  }
+]

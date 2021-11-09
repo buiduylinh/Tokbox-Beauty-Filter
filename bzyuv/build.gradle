@@ -1,0 +1,109 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11"
+            }
+        }
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+            version "3.10.2"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    ndkVersion '22.1.7171670'
+}
+
+ext {
+    NEXUS_USER = ''
+    NEXUS_PASSWORD = ''
+    RELEASE_SNAPSHOT = false
+
+    POM_URL_SNAP = 'https://www.raoyunsoft.com/nexus/repository/maven-snapshots/'
+    POM_URL = 'https://www.raoyunsoft.com/nexus/repository/maven-releases/'
+
+    POM_GROUP_ID = 'com.guaishou.bzlib'
+    POM_ATRIFACT_ID = 'bzyuv'
+    POM_VERSION = '1.1.17'
+}
+if (System.getenv('NEXUS_USER')) {
+    NEXUS_USER = System.getenv('NEXUS_USER')
+}
+if (System.getenv('NEXUS_PASSWORD')) {
+    NEXUS_PASSWORD = System.getenv('NEXUS_PASSWORD')
+}
+println("NEXUS_USER=" + NEXUS_USER + " NEXUS_PASSWORD=" + NEXUS_PASSWORD)
+
+// 上传到私服
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            if (RELEASE_SNAPSHOT) {
+                //snapshot环境
+                snapshotRepository(url: POM_URL_SNAP) {
+                    authentication(userName: NEXUS_USER, password: NEXUS_PASSWORD)
+                }
+                POM_VERSION += "-SNAPSHOT"
+            } else {
+                //正式环境
+                repository(url: POM_URL) {
+                    authentication(userName: NEXUS_USER, password: NEXUS_PASSWORD)
+                }
+            }
+
+            pom.groupId = POM_GROUP_ID
+            pom.artifactId = POM_ATRIFACT_ID
+            pom.version = POM_VERSION
+
+            pom.project {
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+            }
+        }
+    }
+}
+task androidSourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from android.sourceSets.main.java.getSrcDirs()
+}
+artifacts {
+    archives androidSourcesJar
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}

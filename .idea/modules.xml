@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Basic-Video-Capturer-Camera-2-Java.iml" filepath="$PROJECT_DIR$/.idea/modules/Basic-Video-Capturer-Camera-2-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Basic-Video-Capturer-Camera-2-Java.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Basic-Video-Capturer-Camera-2-Java.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bzyuv/Basic-Video-Capturer-Camera-2-Java.bzyuv.iml" filepath="$PROJECT_DIR$/.idea/modules/bzyuv/Basic-Video-Capturer-Camera-2-Java.bzyuv.iml" />
+    </modules>
+  </component>
+</project>

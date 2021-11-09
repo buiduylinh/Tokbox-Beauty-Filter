@@ -1,0 +1,3 @@
+C:/Users/admin/Desktop/New Tokbox/opentok-android-sdk-samples/Basic-Video-Capturer-Camera-2-Java/bzyuv/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/bzyuvlib.dir
+C:/Users/admin/Desktop/New Tokbox/opentok-android-sdk-samples/Basic-Video-Capturer-Camera-2-Java/bzyuv/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/admin/Desktop/New Tokbox/opentok-android-sdk-samples/Basic-Video-Capturer-Camera-2-Java/bzyuv/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
